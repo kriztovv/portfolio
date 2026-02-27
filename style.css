@@ -235,12 +235,13 @@ h1 {
   position: absolute;
   left: auto;
   top: -33%;
-
+  pointer-events: none;
   transform: rotateZ(90deg);
   z-index: 5;
 }
 #videoContainer {
   width: 80%;
+
   /* height: 44%; 
   height: fit-content;*/
   aspect-ratio: 10/6;
@@ -269,6 +270,12 @@ h4 {
   background-color: #fce1f6;
   margin-top: 3vw;
   margin-bottom: 10vw;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.textBorder :hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .contact {
