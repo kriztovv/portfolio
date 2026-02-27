@@ -9,7 +9,7 @@ window.addEventListener(
     // move element down at fraction of page scroll
     el.style.top = `${y * speed}px`;
   },
-  { passive: true }
+  { passive: true },
 );
 // CONFIGURATION
 
@@ -178,7 +178,7 @@ ScrollTrigger.matchMedia({
       scrollTrigger: {
         trigger: container,
         pin: true,
-        scrub: 1,
+        scrub: true,
         end: () => `+=${scrollDist()}`,
       },
     });
