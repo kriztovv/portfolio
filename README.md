@@ -1,1 +1,1 @@
-https://kriztovv.github.io/klauzury
+https://kriztovv.github.io/portfolio/
