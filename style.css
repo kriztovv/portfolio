@@ -289,10 +289,15 @@ h4 {
   width: fit-content;
   height: fit-content;
   background-color: #fce1f6;
-  margin-top: 3vw;
-  margin-bottom: 10vw;
+
   transition: box-shadow 0.2s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+#valorantCG a {
+  text-decoration: none;
+  color: #2a4a4d;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
 }
 .textBorder :hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -657,7 +662,27 @@ h3 {
     top: 5vh;
     left: 0vw;
   }
-
+  #valorantCG {
+    height: 70vh;
+  }
+  #videoContainer {
+    width: 95vw;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin-top: 10vh;
+  }
+  #videoFrame {
+    width: 60vw;
+    height: 96vw;
+    top: -36%;
+    left: 17.5vw;
+  }
+  #valorantCG a {
+    margin-top: 20vh;
+  }
+  h4 {
+    font-size: 6vw;
+  }
   #note {
     width: 40vw;
   }
