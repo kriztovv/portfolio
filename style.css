@@ -239,6 +239,27 @@ h1 {
   transform: rotateZ(90deg);
   z-index: 5;
 }
+#car {
+  width: 100vw;
+  height: min(80vh, 100vw * 16 / 9);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+#note {
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+  z-index: 20;
+}
+#car video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
 #videoContainer {
   width: 80%;
 
@@ -527,6 +548,21 @@ h3 {
   .eyes .right {
     right: calc(50% + (1300px * 0.365 - 650px));
   }
+  .projects a {
+    width: 40vw;
+    height: auto;
+    padding: 0;
+  }
+  .projects .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 5vw;
+  }
+  .projimg {
+    width: 30vw;
+    height: auto;
+    margin: 10vh 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .contact {
@@ -537,6 +573,10 @@ h3 {
     bottom: 20vh !important;
     right: 5vw !important;
     width: 30vw !important;
+  }
+
+  #note {
+    width: 30vw;
   }
 }
 
@@ -553,7 +593,7 @@ h3 {
     width: auto;
     height: 100vh;
   }
-  .projects .container a {
+  /* .projects .container a {
     height: 100vw;
     width: 90vw;
   }
@@ -561,7 +601,7 @@ h3 {
     width: 90vw;
     height: auto;
     margin: 10vh 0;
-  }
+  } */
 
   .aboutpage {
     height: 100vh;
@@ -617,10 +657,15 @@ h3 {
     top: 5vh;
     left: 0vw;
   }
-  .container img {
+
+  #note {
+    width: 40vw;
+  }
+
+  /* .container img {
     width: 50vw;
     height: auto;
-  }
+  } */
 
   /* contact */
   .contact {
@@ -663,10 +708,10 @@ h3 {
     top: 30vh;
     transform: scale(1.5) rotateZ(-10deg) translateY(-2vh);
   }
-  .container img {
+  /* .container img {
     width: 50vw;
     height: auto;
-  }
+  } */
   /* gallery */
   #bigpainting {
     top: calc(100vh + 370vw);
