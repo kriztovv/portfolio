@@ -241,7 +241,7 @@ h1 {
 }
 #car {
   width: 100vw;
-  height: min(80vh, 100vw * 16 / 9);
+  height: fit-content;
   position: relative;
   display: flex;
   justify-content: center;
@@ -256,8 +256,9 @@ h1 {
   z-index: 102;
 }
 #car video {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  min-height: 80vh;
+  height: fit-content;
   aspect-ratio: 16/9;
   z-index: 101;
 }
